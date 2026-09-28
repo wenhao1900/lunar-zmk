@@ -17,14 +17,14 @@
 &trackball_listener {
     scroll_mode {
         layers = <SCROLL>;
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 2>;
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 3>;
     };
 };
 
 &pmw_listener {
     scroll_mode {
         layers = <SCROLL>;
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 2>;
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 3>;
     };
 };
 
@@ -106,7 +106,7 @@
     default_scroll_encoder: default_scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc MOVE_Y(10)>, <&msc MOVE_Y(-10)>;
+        bindings = <&msc MOVE_Y(15)>, <&msc MOVE_Y(-15)>;
         tap-ms = <20>;
     };
 
