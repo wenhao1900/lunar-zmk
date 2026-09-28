@@ -42,7 +42,7 @@
 					a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 					b-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 					status = "disabled";
-					steps = <72>;
+					steps = <36>;
 	 };
 
 	right_encoder: encoder_right {
@@ -50,7 +50,7 @@
 					a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 					b-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 					status = "disabled";
-					steps = <72>;
+					steps = <36>;
 	 };
 	sensors: sensors {
 					compatible = "zmk,keymap-sensors";
