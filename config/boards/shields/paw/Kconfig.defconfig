@@ -8,7 +8,7 @@ config PAW3222
 config ZMK_KEYBOARD_NAME
 	default "Lunar Dust"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
+config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif

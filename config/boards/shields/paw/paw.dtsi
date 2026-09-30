@@ -27,6 +27,7 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
+        wakeup-source;
 
         diode-direction = "row2col";
 		row-gpios
@@ -42,7 +43,7 @@
 					a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 					b-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 					status = "disabled";
-					steps = <30>;
+					steps = <36>;
 	 };
 
 	right_encoder: encoder_right {
@@ -50,12 +51,12 @@
 					a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 					b-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 					status = "disabled";
-					steps = <30>;
+					steps = <36>;
 	 };
 	sensors: sensors {
 					compatible = "zmk,keymap-sensors";
 					sensors = <&left_encoder &right_encoder>;
-					triggers-per-rotation = <60>;
+					triggers-per-rotation = <18>;
 			};
 };
 
