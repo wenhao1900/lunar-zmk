@@ -17,14 +17,14 @@
 &trackball_listener {
     scroll_mode {
         layers = <SCROLL>;
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 8>;
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 9>;
     };
 };
 
 &pmw_listener {
     scroll_mode {
         layers = <SCROLL>;
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 8>;
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 9>;
     };
 };
 
